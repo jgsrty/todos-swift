@@ -13,6 +13,9 @@
 		816574F0268B7B03008447A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816574EF268B7B03008447A9 /* Assets.xcassets */; };
 		816574F3268B7B03008447A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816574F1268B7B03008447A9 /* LaunchScreen.storyboard */; };
 		816574FB268B7B97008447A9 /* TodosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816574FA268B7B97008447A9 /* TodosController.swift */; };
+		81657502268CA35E008447A9 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81657501268CA35E008447A9 /* TodoCell.swift */; };
+		81657504268CA6EA008447A9 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81657503268CA6EA008447A9 /* Todo.swift */; };
+		81657508268CAA15008447A9 /* TodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81657507268CAA15008447A9 /* TodoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		816574F2268B7B03008447A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		816574F4268B7B03008447A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		816574FA268B7B97008447A9 /* TodosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosController.swift; sourceTree = "<group>"; };
+		81657501268CA35E008447A9 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
+		81657503268CA6EA008447A9 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		81657507268CAA15008447A9 /* TodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,8 @@
 			children = (
 				816574E6268B7B01008447A9 /* AppDelegate.swift */,
 				816574FA268B7B97008447A9 /* TodosController.swift */,
+				81657501268CA35E008447A9 /* TodoCell.swift */,
+				81657507268CAA15008447A9 /* TodoController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +95,7 @@
 		816574FE268B7BB9008447A9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81657503268CA6EA008447A9 /* Todo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 				816574E7268B7B01008447A9 /* AppDelegate.swift in Sources */,
 				816574E9268B7B01008447A9 /* SceneDelegate.swift in Sources */,
 				816574FB268B7B97008447A9 /* TodosController.swift in Sources */,
+				81657508268CAA15008447A9 /* TodoController.swift in Sources */,
+				81657502268CA35E008447A9 /* TodoCell.swift in Sources */,
+				81657504268CA6EA008447A9 /* Todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBY29UWRW7;
 				INFOPLIST_FILE = "todos-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,7 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rtyxmd.todos-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QBY29UWRW7;
 				INFOPLIST_FILE = "todos-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -339,7 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "rtyxmd.todos-swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
